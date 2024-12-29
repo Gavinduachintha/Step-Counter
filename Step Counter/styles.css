@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(218, 209, 198);
+  font-family: sans-serif;
+}
+
+.box {
+  /*allow precise positioning*/
+  position: absolute;
+  display: grid;
+  height: auto; /*keep internal layout intact*/
+  width: 500px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  /*Move box to 50% from top and lefr respectively*/
+  transform: translate(-50%, -50%);
+  /* Offset by half its width and height for perfect centering */
+  background-color: rgb(255, 255, 255);
+}
+
+.counter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 100px;
+  padding: auto;
+}
+
+#counter-display {
+  font-size: 50px;
+  color: #222222;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  background-color: #fafafa;
+  width: 100%;
+  box-shadow: inset 0px 5px 10px rgba(244, 242, 242, 0.1);
+}
+
+#increment-btn {
+  background-color: rgba(60, 60, 221, 0.556);
+}
+
+#decrement-btn {
+  background-color: rgba(43, 176, 43, 0.649);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  opacity: 0.9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
